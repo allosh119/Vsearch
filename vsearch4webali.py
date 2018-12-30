@@ -29,7 +29,7 @@ def do_search() -> 'html':
 	phrase = request.form['phrase']
 	letters = request.form['letters']
 	title = 'Here are your results :'
-	results = str(checkletters(phrase,letters))
+	results = str(search4letters(phrase,letters))
 	if results == set():
 		results = "Non Found"
 	log_request(request, results)

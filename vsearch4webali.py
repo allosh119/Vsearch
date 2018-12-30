@@ -1,5 +1,5 @@
 from flask import Flask, render_template,request,redirect,escape
-from vsearch import checkletters
+from vsearch import search4letters
 
 
 app = Flask(__name__)
